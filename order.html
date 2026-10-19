@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+            <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+                <img src="images/Logo.png" alt="MonoLEED" height="80">
+                <span>MonoLEED</span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                <li class="nav-item"><a class="nav-link active" href="order.html">Заказать</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+    
+    <main class="bg-dark text-white">
+
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <strong>Внимание!</strong> При заказе двух моноколёс доставка бесплатно.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>
+    </div>
+
+    <section class="container py-5">
+
+        <h1 class="mb-4 text-center">Сделать заказ</h1>
+
+        <form class="card shadow-sm border-0">
+        <div class="card-body p-4">
+
+            <!-- Имя -->
+            <div class="mb-3">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Иван Иванов" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="ivan@example.com" required>
+            </div>
+
+            <!-- Телефон -->
+            <div class="mb-3">
+            <label for="phone" class="form-label">Телефон</label>
+            <div class="input-group">
+                <span class="input-group-text">+7</span>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="999 123-45-67" required>
+            </div>
+            </div>
+
+            <!-- Товар -->
+            <div class="mb-3">
+            <label for="model" class="form-label">Модель моноколеса</label>
+            <select class="form-select" id="model" name="model" required>
+                <option value="" selected disabled>Выберите модель</option>
+                <option value="x1">MonoLEED X1</option>
+                <option value="pro16">MonoLEED Pro 16</option>
+                <option value="air">MonoLEED Air</option>
+            </select>
+            </div>
+
+            <!-- Комментарий -->
+            <div class="mb-3">
+            <label for="comment" class="form-label">Комментарий</label>
+            <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Пожелания к заказу"></textarea>
+            </div>
+
+            <!-- Согласие -->
+            <div class="form-check mb-4">
+            <input type="checkbox" class="form-check-input" id="agree" name="agree" required>
+            <label class="form-check-label" for="agree">
+                Согласен на обработку данных
+            </label>
+            </div>
+
+            <!-- Кнопка -->
+            <button type="submit" class="btn btn-warning w-100">Отправить</button>
+
+        </div>
+        </form>
+
+    </section>
+    </main>
+
+    <footer class="bg-dark text-light small py-3">
+        <div class="container border-top border-secondary pt-3 mt-2">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">MonoLEED</h5>
+                    <p>
+                        Лидер продаж моноколёс в России.<br>
+                        Скорость, свобода и стиль.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Навигация</h5>
+                    <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="link-light text-decoration-none">Главная</a></li>
+                    <li class="mb-2"><a href="catalog.html" class="link-light text-decoration-none">Каталог</a></li>
+                    <li class="mb-2"><a href="order.html" class="link-light text-decoration-none">Заказать</a></li>
+                    <li class="mb-2"><a href="contacts.html" class="link-light text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Контакты</h5>
+                    <ul class="list-unstyled small">
+                    <li class="mb-2">+7 (968) 523-61-33</li>
+                    <li class="mb-2">samoshkina.m.k@edu.mirea.ru</li>
+                    <li class="mb-2">Москва, ул. Сваги, 1</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-top border-secondary pt-3 text-center small">
+            © 2026 MonoLEED. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
